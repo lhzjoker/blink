@@ -10,7 +10,7 @@ Component({
       type: Boolean,
     },
     count: {
-      type: Number
+      type: Number  /**/
     }
   },
 
