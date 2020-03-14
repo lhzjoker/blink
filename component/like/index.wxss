@@ -1,0 +1,18 @@
+/* component/like/index.wxss */
+.container{
+    display: inline-flex;   /*消除flex容器块状特性并且保持flex特性*/
+    flex-direction: row;
+    padding: 10rpx;     /*设置内边距*/
+}
+.container image{
+    width: 32rpx;
+    height: 28rpx;
+}
+.container text{
+    color: #bbbbbb;
+    position: relative;     /*设置位置，相对原来的位置*/
+    font-size: 24rpx;
+    line-height: 24rpx;     /*消除文字空白间距*/
+    bottom: 10rpx;          /*向上偏移,发现偏移量不够，因为文字有空白间距，需要消除*/
+    left: 8rpx;             /*向右偏移*/
+}

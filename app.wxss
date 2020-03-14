@@ -1,0 +1,4 @@
+page{
+    font-family: "NSimSun";
+    font-size: 32rpx;
+}

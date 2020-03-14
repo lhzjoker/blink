@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-like": "/component/like/index"
+  }
+}
