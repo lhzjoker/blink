@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/util/http.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/like/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/like/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +68,17 @@
       <workItem from="1583938174942" duration="4626000" />
       <workItem from="1584008842913" duration="5723000" />
       <workItem from="1584091598997" duration="10220000" />
-      <workItem from="1584186100193" duration="5411000" />
+      <workItem from="1584186100193" duration="7565000" />
+      <workItem from="1584345739021" duration="5457000" />
     </task>
+    <task id="LOCAL-00001" summary="测试更新">
+      <created>1584194195471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584194195472</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,10 +89,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
