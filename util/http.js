@@ -24,7 +24,8 @@ class Http{
                 let code=res.statusCode.toString();
                 /*startsWith方法，处理开头状态码为2，注意要转换为字符串*/
                 if(code.startsWith('2')){
-                    params.success(res.data)
+                    /*需要用到回调函数就用，不需要就不用*/
+                    params.success && params.success(res.data)
                 }
                 else {
                     /*res.data.error_code返回的数据错误码*/

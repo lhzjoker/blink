@@ -39,7 +39,13 @@ Component({
         this.setData({
           count: count,
           like: !like
-        })
+        });
+        /*自定义事件，激活*/
+        let status=this.properties.like?'like':'cancel';
+        /*事件名取为like*/
+        this.triggerEvent('like',{
+          status: status
+        },{})
       }
     }
 })

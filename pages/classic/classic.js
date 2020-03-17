@@ -1,6 +1,7 @@
 // pages/classic/classic.js
 
 import {ClassicModel} from "../../models/classic";
+import {LikeModel} from "../../models/like";
 
 Page({
 
@@ -11,6 +12,11 @@ Page({
     classic: null,
   },
 
+  /*监听点赞事件返回服务端*/
+  onLike: function(event){
+    console.log(event);
+    LikeModel.getLike(event.detail.status, this.data.classic.id, this.data.classic.type)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
