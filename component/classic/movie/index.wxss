@@ -1,0 +1,23 @@
+/* component/classic/movie/index.wxss */
+.classic_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classic_img{
+    width: 750rpx;
+    height: 500rpx;
+}
+
+.tag{
+    width: 50rpx;
+    height: 150rpx;
+    position: relative;
+    right: 300rpx;
+    bottom: 50rpx;
+}
+.content{
+    font-size: 36rpx;
+    max-width: 500rpx;  /*设置文字最大宽度，自适应，超过就换行，没超过文字也可以居中*/
+}

@@ -43,6 +43,7 @@ class Http{
         if(!error_code){
             error_code=1
         }
+        /*处理错误的方法，在页面显示错误*/
         wx.showToast({
           title: tips[error_code],
             icon: 'none',
