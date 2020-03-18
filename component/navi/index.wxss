@@ -1,0 +1,19 @@
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    height: 70rpx;
+    width: 600rpx;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+.icon{
+    height: 70rpx;
+    width: 80rpx;
+}
+
+.title{
+    font-size: 30rpx;
+}

@@ -22,9 +22,10 @@ Component({
     months:['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
     year:0,
     month: '',
-    _index: ''
+    _index: ''  /*不能和上面属性index同名*/
   },
 
+  /*组件的生命周期函数*/
   attached: function(){
     let date=new Date();
     let year=date.getFullYear();

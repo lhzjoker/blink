@@ -10,6 +10,8 @@ Page({
    */
   data: {
     classic: null,
+    latest: true,
+    first: false
   },
 
   /*监听点赞事件返回服务端*/

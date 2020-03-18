@@ -1,0 +1,5 @@
+<view class="container">
+    <image class="icon" src="{{latest?disLeftSrc:leftSrc}}"></image>
+    <text class="title">{{title}}</text>
+    <image class="icon" src="{{first?disRightSrc:rightSrc}}"></image>
+</view>

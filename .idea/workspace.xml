@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/component/navi/images/triangle.dis@left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/images/triangle.dis@right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/images/triangle@left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/images/triangle@right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/navi/index.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/epsoide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/epsoide/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/epsoide/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/epsoide/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.wxss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,21 +42,22 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/component/like/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/component/navi/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development software\WeChatProjects\blink\component\navi\images" />
+      <recent name="D:\Development software\WeChatProjects\blink\component\like\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Development software\WeChatProjects\blink\component\classic\movie\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Development software\WeChatProjects\blink\component\like\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +87,8 @@
       <workItem from="1584091598997" duration="10220000" />
       <workItem from="1584186100193" duration="7565000" />
       <workItem from="1584345739021" duration="11573000" />
-      <workItem from="1584434528805" duration="22282000" />
+      <workItem from="1584434528805" duration="22955000" />
+      <workItem from="1584511160246" duration="12836000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -116,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584466812346</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新组件">
+      <created>1584469958340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584469958340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
