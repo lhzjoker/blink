@@ -21,22 +21,20 @@ Page({
   },
   /*监听切换页面事件*/
   onNext: function(){
-    ClassicModel.getNext(this.data.classic.index,(res)=>{
+    this._updateClassic('next')
+  },
+  onPrevious: function(){
+      this._updateClassic('previous')
+  },
+  /*更新函数*/
+  _updateClassic: function(nextOrprevious){
+    ClassicModel.getCLassic(this.data.classic.index,nextOrprevious,(res)=>{
       this.setData({
         classic: res,
         latest: ClassicModel.islatest(res.index),
         first: ClassicModel.isFirst(res.index)
       })
     })
-  },
-  onPrevious: function(){
-      ClassicModel.getPrevious(this.data.classic.index,(res)=>{
-        this.setData({
-          classic: res,
-          latest: ClassicModel.islatest(res.index),
-          first: ClassicModel.isFirst(res.index)
-        })
-      })
   },
   /**
    * 生命周期函数--监听页面加载

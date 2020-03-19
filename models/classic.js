@@ -6,27 +6,34 @@ class ClassicModel{
             url: 'classic/latest',
             success: (res)=>{
                 callback(res)
-                this._setLatestIndex(res.index)
+                /*用缓存设置最新期刊号*/
+                this._setLatestIndex(res.index);
+                /*最新期刊写入缓存*/
+                let key = this._getKey(res.index);
+                wx.setStorageSync(key, res);
             }
         });
     }
 
-    static getPrevious(index,callback){
-        Http.request({
-            url: `classic/${index}/previous`,
-            success: (res)=>{
-                callback(res)
-            }
-        })
-    }
+    /*缓存的应用，把获取的页面写入缓存*/
+    static getCLassic(index,nextOrprevious,callback){
+        /*缓存中寻找or调用API，然后写入缓存中*/
+        /*用key value的形式*/
+        let key = nextOrprevious=='next'?this._getKey(index+1):this._getKey(index-1);
+        let classic = wx.getStorageSync(key);
+        if(!classic){
+            Http.request({
+                url: `classic/${index}/${nextOrprevious}`,
+                success: (res)=>{
+                    callback(res)
+                    wx.setStorageSync(this._getKey(res.index), res);
+                }
+            })
+        }
+        else {
+            callback(classic)
+        }
 
-    static getNext(index,callback){
-        Http.request({
-            url: `classic/${index}/next`,
-            success: (res)=>{
-                callback(res)
-            }
-        })
     }
 
     static isFirst(index){
@@ -39,11 +46,17 @@ class ClassicModel{
     }
 
     static _setLatestIndex(index){
+        /*同步设置保存最新期刊号，key，value的方式*/
         wx.setStorageSync('latest', index);
     }
 
     static _getLatestIndex(){
+        /*获取最新期刊号，用设置的key来获取*/
         return wx.getStorageSync('latest');
+    }
+
+    static _getKey(index){
+        return 'classic-' + index
     }
 }
 

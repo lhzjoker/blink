@@ -24,11 +24,13 @@ Component({
    */
   methods: {
     onLeft: function () {
+      /*如果是最新页，左按钮则失效*/
       if(!this.properties.latest){
         this.triggerEvent('left',{},{})
       }
     },
     onRight: function () {
+      /*如果是首页，右按钮则失效*/
       if(!this.properties.first){
         this.triggerEvent('right',{},{})
       }
