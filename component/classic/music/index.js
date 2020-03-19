@@ -1,11 +1,11 @@
-// component/classic/movie/index.js
+// component/classic/music/index.js
 import {classicBeh} from "../classic-Beh";
 
 Component({
   /**
    * 组件的属性列表
    */
-  behaviors: [classicBeh],
+  behaviors:[classicBeh],
   properties: {
   },
 
@@ -13,7 +13,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    tag: 'images/movie@tag.png'
+    on: 'images/player@playing.png',
+    off: 'images/player@waitting.png',
+    tag: 'images/music@tag.png'
   },
 
   /**

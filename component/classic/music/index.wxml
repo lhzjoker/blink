@@ -1,0 +1,6 @@
+<view>
+    <image src="{{img}}"></image>
+    <image src="{{on}}"></image>
+    <image src="{{tag}}"></image>
+    <text>{{content}}</text>
+</view>

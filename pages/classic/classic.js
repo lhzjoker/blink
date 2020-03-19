@@ -19,6 +19,25 @@ Page({
     console.log(event);
     LikeModel.getLike(event.detail.status, this.data.classic.id, this.data.classic.type)
   },
+  /*监听切换页面事件*/
+  onNext: function(){
+    ClassicModel.getNext(this.data.classic.index,(res)=>{
+      this.setData({
+        classic: res,
+        latest: ClassicModel.islatest(res.index),
+        first: ClassicModel.isFirst(res.index)
+      })
+    })
+  },
+  onPrevious: function(){
+      ClassicModel.getPrevious(this.data.classic.index,(res)=>{
+        this.setData({
+          classic: res,
+          latest: ClassicModel.islatest(res.index),
+          first: ClassicModel.isFirst(res.index)
+        })
+      })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
