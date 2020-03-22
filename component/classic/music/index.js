@@ -13,8 +13,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    on: 'images/player@playing.png',
-    off: 'images/player@waitting.png',
+    off: 'images/player@pause.png',
+    on: 'images/player@play.png',
     tag: 'images/music@tag.png'
   },
 

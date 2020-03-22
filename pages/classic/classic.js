@@ -11,7 +11,9 @@ Page({
   data: {
     classic: null,
     latest: true,
-    first: false
+    first: false,
+    likeCount: 0,
+    likeStatus: false
   },
 
   /*监听点赞事件返回服务端*/
@@ -26,9 +28,10 @@ Page({
   onPrevious: function(){
       this._updateClassic('previous')
   },
-  /*更新函数*/
+  /*更新页面函数*/
   _updateClassic: function(nextOrprevious){
     ClassicModel.getCLassic(this.data.classic.index,nextOrprevious,(res)=>{
+      this._getLikeStatus(res.id,res.type)
       this.setData({
         classic: res,
         latest: ClassicModel.islatest(res.index),
@@ -36,14 +39,28 @@ Page({
       })
     })
   },
+  /*获取页面的点赞状态信息*/
+  _getLikeStatus(artID,category){
+    LikeModel.getClassicLikeStatus(artID,category,(res)=> {
+      /*更新点赞数和点赞状态，因为这个是实时更新的，不能写入缓存当中，需要额外更新*/
+      this.setData({
+        likeCount: res.fav_nums,
+        likeStatus: res.like_status
+      })
+    })
+  }
+  ,
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
       ClassicModel.getLatest((res)=>{
+        // this._getLikeStatus(res.id,res.type)
         /*数据更新*/
         this.setData({
-          classic: res
+          classic: res,
+          likeCount: res.fav_nums,
+          likeStatus: res.like_status
         })
       })
   },

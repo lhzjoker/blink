@@ -5,17 +5,8 @@
 }
 
 .classic_img{
-    width: 420rpx;
-    height: 420rpx;
-    border-radius: 50%;
-    margin-top: 60rpx;
-}
-
-.player_img{
-    width: 120rpx;
-    height: 120rpx;
-    position: relative;
-    bottom: 270rpx;
+    width: 750rpx;
+    height: 500rpx;
 }
 
 .tag{
@@ -25,8 +16,7 @@
     right: 300rpx;
     bottom: 60rpx;
 }
-
 .content{
     font-size: 36rpx;
-    max-width: 500rpx;
+    max-width: 500rpx;  /*设置文字最大宽度，自适应，超过就换行，没超过文字也可以居中*/
 }

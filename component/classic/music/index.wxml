@@ -1,6 +1,7 @@
-<view>
-    <image src="{{img}}"></image>
-    <image src="{{on}}"></image>
-    <image src="{{tag}}"></image>
-    <text>{{content}}</text>
+<view hidden="{{hidden}}" class="classic_container">
+    <image src="{{img}}" class="classic_img"></image>
+    <image src="{{on}}" class="player_img"></image>
+    <image src="{{tag}}" class="tag"></image>
+    <text class="content">{{content}}</text>
 </view>
+

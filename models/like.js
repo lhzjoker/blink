@@ -12,6 +12,17 @@ class LikeModel {
             }
         })
     }
+
+    /*获取页面点赞状态*/
+    static getClassicLikeStatus(artID, category, callback){
+        let url = `classic/${category}/${artID}/favor`
+        Http.request({
+            url: url,
+            success: (res)=>{
+                callback(res)
+            }
+        })
+    }
 }
 export {
     LikeModel
