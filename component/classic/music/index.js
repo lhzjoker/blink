@@ -54,7 +54,7 @@ Component({
         this.setData({
           playing: false
         });
-        mMgr.pause()
+        mMgr.pause()    /*暂停*/
       }
     },
 
