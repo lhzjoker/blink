@@ -1,4 +1,7 @@
 {
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "pages": [
     "pages/classic/classic"
   ],

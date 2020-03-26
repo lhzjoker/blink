@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/component/classic/classic-Beh.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/classic/classic-Beh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/classic/music/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/classic/music/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/classic/music/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/classic/music/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/classic/music/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/classic/music/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/classic/classic.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/classic/classic.wxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +85,9 @@
       <workItem from="1584511160246" duration="12896000" />
       <workItem from="1584599313951" duration="15660000" />
       <workItem from="1584692075142" duration="3827000" />
-      <workItem from="1584860137059" duration="8663000" />
+      <workItem from="1584860137059" duration="9272000" />
+      <workItem from="1585188632238" duration="10399000" />
+      <workItem from="1585209350310" duration="3933000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -165,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584898184682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="页面js复用文件">
+      <created>1584898218726</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584898218726</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +210,7 @@
     <MESSAGE value="缓存机制的应用" />
     <MESSAGE value="隐藏组件的使用和like组件数据不能使用缓存" />
     <MESSAGE value="页面wxss复用文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面wxss复用文件" />
+    <MESSAGE value="页面js复用文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面js复用文件" />
   </component>
 </project>

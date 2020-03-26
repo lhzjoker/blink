@@ -1,6 +1,6 @@
 <view hidden="{{hidden}}" class="classic_container">
-    <image src="{{img}}" class="classic_img"></image>
-    <image src="{{on}}" class="player_img"></image>
+    <image src="{{img}}" class="classic_img {{playing?'rotation':''}}"></image>
+    <image bind:tap="onPlay" src="{{playing?pauseSrc:playSrc}}" class="player_img"></image>
     <image src="{{tag}}" class="tag"></image>
     <text class="content">{{content}}</text>
 </view>
