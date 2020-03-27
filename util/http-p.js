@@ -8,14 +8,19 @@ const tips = {
 }
 
 class Http{
-    static request(params){
-        if (!params.method){
-            params.method='GET'
-        }
+    static request({url,data={},method='GET'}){
+        return new Promise((resolve, reject)=>{
+            this._request(url,resolve,reject,data,method)
+        })
+
+    }
+
+    /*promise重构request*/
+    static _request(url,resolve,reject,data={},method='GET'){
         wx.request({
-            url: config.apiBaseUrl + params.url,
-            method: params.method,
-            data:params.data,
+            url: config.apiBaseUrl + url,
+            method: method,
+            data: data,
             header: {
                 'content-type': 'application/json',
                 'appkey': config.appkey
@@ -24,16 +29,17 @@ class Http{
                 let code=res.statusCode.toString();
                 /*startsWith方法，处理开头状态码为2，注意要转换为字符串*/
                 if(code.startsWith('2')){
-                    /*需要用到回调函数就用，不需要就不用*/
-                    params.success && params.success(res.data)
+                    resolve(res.data)
                 }
                 else {
+                    reject()       //错误是不需要返回数据的
                     /*res.data.error_code返回的数据错误码*/
                     this._show_error(res.data.error_code)
                 }
             },
             /*fail出现的一个场景是断网*/
             fail: (err)=>{
+                reject()
                 this._show_error(1)
             }
         })
@@ -47,7 +53,7 @@ class Http{
         const tip=tips[error_code]
         /*处理错误的方法，在页面显示错误*/
         wx.showToast({
-            title: tip?tip:tips[1],
+          title: tip?tip:tips[1],
             icon: 'none',
             duration: 2000
         })

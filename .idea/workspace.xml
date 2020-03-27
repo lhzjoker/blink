@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/tab/book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tab/book@highlight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tab/classic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tab/classic@highlight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tab/my.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tab/my@highlight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book/book.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book/book.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book/book.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/my.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/my.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/my.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/my.wxss" afterDir="false" />
+    <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="导航栏">
+      <change afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/http-p.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/classic/music/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/classic/music/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/book/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/http.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/tab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,15 +45,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development software\WeChatProjects\blink\component\classic\movie\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development software\WeChatProjects\blink\util" />
       <recent name="D:\Development software\WeChatProjects\blink\images\tab" />
       <recent name="D:\Development software\WeChatProjects\blink\component\classic\essay\images" />
       <recent name="D:\Development software\WeChatProjects\blink\component\classic\music\images" />
       <recent name="D:\Development software\WeChatProjects\blink\component\navi\images" />
-      <recent name="D:\Development software\WeChatProjects\blink\component\like\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Development software\WeChatProjects\blink\component\classic\movie\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,7 +89,8 @@
       <workItem from="1584692075142" duration="3827000" />
       <workItem from="1584860137059" duration="9272000" />
       <workItem from="1585188632238" duration="10399000" />
-      <workItem from="1585209350310" duration="9159000" />
+      <workItem from="1585209350310" duration="10684000" />
+      <workItem from="1585288324243" duration="10521000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -208,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585213902903</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="导航栏">
+      <created>1585226081394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585226081394</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +236,7 @@
     <MESSAGE value="页面wxss复用文件" />
     <MESSAGE value="页面js复用文件" />
     <MESSAGE value="设置音乐组件的播放暂停等功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置音乐组件的播放暂停等功能" />
+    <MESSAGE value="导航栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="导航栏" />
   </component>
 </project>
