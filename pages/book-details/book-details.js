@@ -1,3 +1,4 @@
+// pages/book-details/book-details.js
 import {BookModel} from "../../models/book";
 
 Page({
@@ -6,22 +7,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    books: []
+    bookDetails: null,
+    comments: [],
+    likeStatus: false,
+    likeCount: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //正确的使用promise,每层return promise对象，这样就是平行的，不会形成回调地狱
-    BookModel.getHotList().then(
-        res=>{
-          console.log(res)
-            this.setData({
-                books: res
-            })
-        }
-    )
+      const bid = options.bid;
+      const bookDetails = BookModel.getBookDeteils(bid);
+      const comments = BookModel.getComments(bid);
+      const likeStatus = BookModel.getLikeStatus(bid);
+
+      bookDetails.then((res)=>{
+        this.setData({
+          bookDetails: res
+        })
+      });
+
+      comments.then((res)=>{
+        this.setData({
+          comments: res
+        })
+      });
+
+      likeStatus.then((res)=>{
+        this.setData({
+          likeStatus: res.like_status,
+          likeCount: res.fav_nums
+        })
+      })
   },
 
   /**

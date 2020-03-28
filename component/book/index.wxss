@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 240rpx;
+    height: 360rpx;
+    position: relative;     /*理解为何这里设置成relative*/
+    margin-top: 30rpx;
+    box-shadow: 2px 2px 3px #e3e3e3;      /*阴影*/
+}
+
+.book_image{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;     /*小圆角*/
+}
+
+.description{
+    width: 216rpx;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    padding: 5rpx 10rpx 8rpx 15rpx;     /*内边距，上右下左*/
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.title{
+    margin-top: 10rpx;
+    text-overflow: ellipsis;    /*当文本溢出包含元素时，显示省略符号来代表被修剪的文本*/
+    white-space: nowrap;        /*文本不会进行换行*/
+    overflow: hidden;           /*内容会被修剪，并且其余内容是不可见的*/
+}
+
+.author{
+    font-size: 20rpx;
+    text-overflow: ellipsis;    /*当文本溢出包含元素时，显示省略符号来代表被修剪的文本*/
+    white-space: nowrap;        /*文本不会进行换行*/
+    overflow: hidden;           /*内容会被修剪，并且其余内容是不可见的*/
+    margin-bottom: 10rpx;
+    color: #999999;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20rpx;
+}
+
+.footer{
+    color: #666666;
+}

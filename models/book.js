@@ -12,6 +12,24 @@ class BookModel {
             url: 'book/favor/count',
         })
     }
+
+    static getBookDeteils(bid){
+        return Http.request({
+            url: `book/${bid}/detail`
+        })
+    }
+
+    static getComments(bid){
+        return Http.request({
+            url: `book/${bid}/short_comment`
+        })
+    }
+
+    static getLikeStatus(bid){
+        return Http.request({
+            url: `book/${bid}/favor`
+        })
+    }
 }
 
 export {
