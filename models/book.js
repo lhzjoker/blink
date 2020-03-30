@@ -25,6 +25,8 @@ class BookModel {
         })
     }
 
+
+
     static getLikeStatus(bid){
         return Http.request({
             url: `book/${bid}/favor`

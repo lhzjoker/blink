@@ -8,7 +8,8 @@ Component({
   options: {
     multipleSlots:true
   },
-
+  /*外部样式，外部样式可以有多个，所以这里是一个数组*/
+  externalClasses:['tag-class'],
   properties: {
     comment: String,
   },

@@ -17,7 +17,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      const bid = options.bid;
+      const bid = options.bid;    /*接收页面传来的参数*/
       const bookDetails = BookModel.getBookDeteils(bid);
       const comments = BookModel.getComments(bid);
       const likeStatus = BookModel.getLikeStatus(bid);

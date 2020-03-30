@@ -1,4 +1,5 @@
-<view class="container">
+<view class="container tag-class">
     <text>{{comment}}</text>
+    <!--    插槽的使用-->
     <slot name="after"></slot>
 </view>

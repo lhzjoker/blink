@@ -43,7 +43,7 @@
 
 .headline{
     font-size: 30rpx;
-    font-weight: 540;
+    font-weight: 600;
     margin-bottom: 30rpx;
 }
 
@@ -64,11 +64,15 @@
     color: #aaa;
 }
 
-/*子元素选择器，随心所欲的修改样式*/
+/*子元素选择器，注意子元素选择器和后代选择器的区别，随心所欲的修改样式*/
 .tags_container > v-tag:nth-child(1) > view{
     background-color: #fffbdd;
 }
 
 .tags_container > v-tag:nth-child(2) > view{
     background-color: #eefbff;
+}
+
+.content{
+    text-indent: 64rpx; /*在开头实现64rpx的间隙*/
 }

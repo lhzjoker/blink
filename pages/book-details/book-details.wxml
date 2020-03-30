@@ -1,3 +1,4 @@
+<wxs src="../../util/filter.wxs" module="util"/>
 <view class="container">
     <view class="header">
         <image class="book_img" src="{{bookDetails.image}}" />
@@ -9,9 +10,14 @@
         <view class="tags_container">
             <block wx:key="content" wx:for="{{comments}}">
                 <v-tag comment="{{item.content}}">
+                    <!--使用插槽，注意需要在tag组件当中-->
                     <text class="num" slot="after">{{'+' + item.nums}}</text>
                 </v-tag>
             </block>
         </view>
+    </view>
+    <view class="sub-container">
+        <text class="headline">内容简介</text>
+        <text class="content" decode="{{true}}">{{util.format(bookDetails.summary)}}</text>
     </view>
 </view>

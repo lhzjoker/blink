@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 240rpx;
     height: 360rpx;
-    position: relative;     /*理解为何这里设置成relative*/
+    position: relative;     /*理解为何这里设置成relative,绝对不能设置成static，默认为static，父元素成为description的参照元素*/
     margin-top: 30rpx;
     box-shadow: 2px 2px 3px #e3e3e3;      /*阴影*/
 }
