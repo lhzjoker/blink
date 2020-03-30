@@ -46,3 +46,29 @@
     font-weight: 540;
     margin-bottom: 30rpx;
 }
+
+.tags_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tags_container v-tag{
+    margin-bottom: 10rpx;
+    margin-right: 15rpx;
+}
+
+.num{
+    font-size: 20rpx;
+    padding-left: 15rpx;
+    color: #aaa;
+}
+
+/*子元素选择器，随心所欲的修改样式*/
+.tags_container > v-tag:nth-child(1) > view{
+    background-color: #fffbdd;
+}
+
+.tags_container > v-tag:nth-child(2) > view{
+    background-color: #eefbff;
+}

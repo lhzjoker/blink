@@ -6,5 +6,12 @@
     </view>
     <view class="sub-container">
         <text class="headline">短评</text>
+        <view class="tags_container">
+            <block wx:key="content" wx:for="{{comments}}">
+                <v-tag comment="{{item.content}}">
+                    <text class="num" slot="after">{{'+' + item.nums}}</text>
+                </v-tag>
+            </block>
+        </view>
     </view>
 </view>

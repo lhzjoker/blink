@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/component/book/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/book/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/book/index.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/book/index.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/book/quality.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/book/tip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/icon/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/icon/share.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book-details/book-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book-details/book-details.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book-details/book-details.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/book-details/book-details.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/tag/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/tag/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/tag/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/tag/index.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,7 +96,9 @@
       <workItem from="1585188632238" duration="10399000" />
       <workItem from="1585209350310" duration="10684000" />
       <workItem from="1585288324243" duration="20568000" />
-      <workItem from="1585394990431" duration="17351000" />
+      <workItem from="1585394990431" duration="18124000" />
+      <workItem from="1585555249120" duration="1565000" />
+      <workItem from="1585564153843" duration="6196000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -227,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585302918395</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="编写book组件">
+      <created>1585417886778</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585417886778</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +260,7 @@
     <MESSAGE value="设置音乐组件的播放暂停等功能" />
     <MESSAGE value="导航栏" />
     <MESSAGE value="book页面用promise的方式来构造" />
-    <option name="LAST_COMMIT_MESSAGE" value="book页面用promise的方式来构造" />
+    <MESSAGE value="编写book组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写book组件" />
   </component>
 </project>
