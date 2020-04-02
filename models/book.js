@@ -32,6 +32,17 @@ class BookModel {
             url: `book/${bid}/favor`
         })
     }
+
+    static postComment(bid,comment){
+        return Http.request({
+            url: 'book/add/short_comment',
+            method: 'POST',
+            data: {
+                book_id: bid,
+                content: comment
+            }
+        })
+    }
 }
 
 export {

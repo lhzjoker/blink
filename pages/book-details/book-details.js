@@ -1,5 +1,6 @@
 // pages/book-details/book-details.js
 import {BookModel} from "../../models/book";
+import {LikeModel} from "../../models/like";
 
 Page({
 
@@ -10,9 +11,59 @@ Page({
     bookDetails: null,
     comments: [],
     likeStatus: false,
-    likeCount: 0
+    likeCount: 0,
+    posting: false
   },
 
+  onLike: function(event){
+    LikeModel.getLike(event.detail.status,this.data.bookDetails.id,400)
+  },
+
+  onFakePost: function(event){
+    this.setData({
+      posting: true
+    })
+  },
+
+  onCancel: function(event){
+    this.setData({
+      posting: false
+    })
+  },
+
+  onPost: function(event){
+    /*event.detail.value是输入框里的值*/
+    const comment = event.detail.comment || event.detail.value;
+
+    if(!comment){
+      return;
+    }
+
+    if(comment.length>12){
+      wx.showToast({
+        title: '短评不能超过12个字',
+        icon: 'none'
+      })
+      return
+    }
+
+    BookModel.postComment(this.data.bookDetails.id,comment)
+        .then((res)=>{
+          wx.showToast({
+            title: '+1',
+            icon: 'none'
+          })
+          /*把新添加的短评加到数组第一个元素，unshift*/
+          this.data.comments.unshift({
+            content: comment,
+            nums: 1
+          })
+          this.setData({
+            comments: this.data.comments,
+            posting: false
+          })
+        })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

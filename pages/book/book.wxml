@@ -12,7 +12,6 @@
                 <v-book book="{{item}}"></v-book>
             </block>
         </view>
-
     </view>
 </view>
 

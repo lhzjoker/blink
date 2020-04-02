@@ -1,0 +1,9 @@
+.container{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.6;       /*透明度*/
+    z-index: 99;
+}

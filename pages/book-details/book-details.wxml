@@ -7,8 +7,9 @@
     </view>
     <view class="sub-container">
         <text class="headline">短评</text>
-        <view class="tags_container">
-            <block wx:key="content" wx:for="{{comments}}">
+        <text wx:if="{{comments==false}}" class="shadow">还没有短评</text>
+        <view class="tags-container">
+            <block wx:key="content" wx:for="{{util.limit(comments,10)}}">
                 <v-tag comment="{{item.content}}">
                     <!--使用插槽，注意需要在tag组件当中-->
                     <text class="num" slot="after">{{'+' + item.nums}}</text>
@@ -18,6 +19,56 @@
     </view>
     <view class="sub-container">
         <text class="headline">内容简介</text>
+        <!--decode是开启编码方式，是空格编码生效-->
         <text class="content" decode="{{true}}">{{util.format(bookDetails.summary)}}</text>
     </view>
+    <view class="sub-container">
+        <text class="headline">书本信息</text>
+        <view class="detail-container">
+            <view class="vertical description">
+                <text>出版社</text>
+                <text>出版年</text>
+                <text>页数</text>
+                <text>定价</text>
+                <text>装帧</text>
+            </view>
+            <view class="vertical">
+                <text>{{bookDetails.publisher}}</text>
+                <text>{{bookDetails.pubdate}}</text>
+                <text>{{bookDetails.pages}}</text>
+                <text>{{bookDetails.price}}</text>
+                <text>{{bookDetails.binding}}</text>
+            </view>
+        </view>
+    </view>
 </view>
+
+<view wx:if="{{!posting}}" class="post-container">
+    <view bind:tap="onFakePost" class="post-fake">
+        <text>输入短评</text>
+    </view>
+    <view class="like-container">
+        <v-like bind:like="onLike" class="like"
+                like="{{likeStatus}}" count="{{likeCount}}"></v-like>
+    </view>
+</view>
+
+<view wx:if="{{posting}}" class="posting-container">
+    <view class="post-header">
+        <text wx:if="{{!(comments==false)}}">仅可点击标签+1</text>
+        <text wx:else>暂无标签</text>
+        <text bind:tap="onCancel" class="cancel">取消</text>
+    </view>
+    <view class="tags-container">
+        <text wx:if="{{comments==false}}" class="shadow">还没有短评</text>
+        <block wx:key="content" wx:for="{{util.limit(comments,3)}}">
+            <v-tag bind:tapping="onPost" comment="{{item.content}}">
+                <!--使用插槽，注意需要在tag组件当中-->
+                <text class="num" slot="after">{{'+' + item.nums}}</text>
+            </v-tag>
+        </block>
+    </view>
+    <input bindconfirm="onPost" class="post" placeholder="短评最多12个字" />
+</view>
+
+<v-mask wx:if="{{posting}}"></v-mask>
