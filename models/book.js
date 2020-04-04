@@ -43,6 +43,16 @@ class BookModel {
             }
         })
     }
+
+    static search(start,q){
+        return Http.request({
+            url: 'book/search?summary=1',
+            data: {
+                start: start,
+                q: q
+            }
+        })
+    }
 }
 
 export {
