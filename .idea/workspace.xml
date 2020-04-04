@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/component/mask/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/mask/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/mask/index.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/mask/index.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/tag/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/tag/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/tag/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/tag/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/filter.wxs" beforeDir="false" afterPath="$PROJECT_DIR$/util/filter.wxs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +93,8 @@
       <workItem from="1585394990431" duration="18124000" />
       <workItem from="1585555249120" duration="1565000" />
       <workItem from="1585564153843" duration="19486000" />
-      <workItem from="1585811142179" duration="20395000" />
+      <workItem from="1585811142179" duration="21786000" />
+      <workItem from="1585979323785" duration="4159000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -245,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585590844264</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="实现短评功能">
+      <created>1585838180739</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585838180739</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +280,7 @@
     <MESSAGE value="编写book组件" />
     <MESSAGE value="短评组件" />
     <MESSAGE value="wxs的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="wxs的使用" />
+    <MESSAGE value="实现短评功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现短评功能" />
   </component>
 </project>

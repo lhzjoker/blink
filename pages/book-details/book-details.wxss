@@ -170,7 +170,7 @@
     color: #bbb;
 }
 
-.tags-container{
+.posting-container .tags-container{
     width: 690rpx;
     padding: 40rpx 30rpx 0 30rpx;
 }

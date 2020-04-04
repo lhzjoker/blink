@@ -68,29 +68,48 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+      /*加载数据，开启loading*/
+      wx.showLoading();
       const bid = options.bid;    /*接收页面传来的参数*/
       const bookDetails = BookModel.getBookDeteils(bid);
       const comments = BookModel.getComments(bid);
       const likeStatus = BookModel.getLikeStatus(bid);
 
-      bookDetails.then((res)=>{
-        this.setData({
-          bookDetails: res
-        })
-      });
+      /*promise合体，把三个promise合在一起得到一个新的promise
+      ，直到每个子promise都执行完（异步）才调用回调函数*/
+      Promise.all([bookDetails,comments,likeStatus])
+          .then((res)=>{
+            this.setData({
+              bookDetails: res[0],
+              comments: res[1].comments,
+              likeStatus: res[2].like_status,
+              likeCount: res[2].fav_nums
+            })
+            /*页面加载完成，关闭loading*/
+            wx.hideLoading();
+          });
 
-      comments.then((res)=>{
-        this.setData({
-          comments: res.comments
-        })
-      });
-
-      likeStatus.then((res)=>{
-        this.setData({
-          likeStatus: res.like_status,
-          likeCount: res.fav_nums
-        })
-      })
+      // bookDetails.then((res)=>{
+      //   console.log(res)
+      //   this.setData({
+      //     bookDetails: res
+      //   })
+      // });
+      //
+      // comments.then((res)=>{
+      //   console.log(res)
+      //   this.setData({
+      //     comments: res.comments
+      //   })
+      // });
+      //
+      // likeStatus.then((res)=>{
+      //   console.log(res)
+      //   this.setData({
+      //     likeStatus: res.like_status,
+      //     likeCount: res.fav_nums
+      //   })
+      // })
   },
 
   /**

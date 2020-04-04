@@ -60,7 +60,7 @@
 					"id": 0,
 					"name": "book-details",
 					"pathName": "pages/book-details/book-details",
-					"query": "bid=7",
+					"query": "bid=51664",
 					"scene": null
 				}
 			]
