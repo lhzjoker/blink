@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/component/search/images/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/search/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/search/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/search/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/search/index.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/search/index.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/keyword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/behaviors/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/loading/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/loading/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/loading/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/loading/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book-details/book-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book-details/book-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/book/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/book/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/search/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/search/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/search/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/book/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/book/book.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/component" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,15 +54,15 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development software\WeChatProjects\blink\component\classic\movie\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development software\WeChatProjects\blink\component" />
       <recent name="D:\Development software\WeChatProjects\blink\component\search\images" />
       <recent name="D:\Development software\WeChatProjects\blink\images\icon" />
       <recent name="D:\Development software\WeChatProjects\blink\images\book" />
       <recent name="D:\Development software\WeChatProjects\blink\util" />
-      <recent name="D:\Development software\WeChatProjects\blink\images\tab" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Development software\WeChatProjects\blink\component\classic\movie\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -106,7 +105,8 @@
       <workItem from="1585564153843" duration="19486000" />
       <workItem from="1585811142179" duration="21786000" />
       <workItem from="1585979323785" duration="14427000" />
-      <workItem from="1586008690409" duration="12901000" />
+      <workItem from="1586008690409" duration="14749000" />
+      <workItem from="1586070773769" duration="19206000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585990119050</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="高阶组件search">
+      <created>1586021777589</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1586021777589</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +308,7 @@
     <MESSAGE value="wxs的使用" />
     <MESSAGE value="实现短评功能" />
     <MESSAGE value="开启loading和关闭loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="开启loading和关闭loading" />
+    <MESSAGE value="高阶组件search" />
+    <option name="LAST_COMMIT_MESSAGE" value="高阶组件search" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 import {BookModel} from "../../models/book";
+import {random} from "../../util/common";
 
 Page({
 
@@ -7,7 +8,8 @@ Page({
    */
   data: {
     books: [],
-    searching: false
+    searching: false,
+    more: ''
   },
 
   onSearch(event){
@@ -76,7 +78,9 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+      this.setData({
+        more: random(16)
+      })
   },
 
   /**
