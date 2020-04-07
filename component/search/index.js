@@ -1,6 +1,5 @@
 import {KeywordModel} from "../../models/keyword";
 import {BookModel} from "../../models/book";
-import {classicBeh} from "../classic/classic-Beh";
 import {paginationBeh} from "../behaviors/pagination";
 Component({
   /**
@@ -23,7 +22,6 @@ Component({
     hotWords: [],
     searching: false,
     q: '',
-    loading: false,
     loadingCenter: false
   },
 
@@ -53,7 +51,7 @@ Component({
         return
       }
       /*设置一把锁，避免请求重复数据*/
-      if(this._isLocked()){
+      if(this.isLocked()){
         return;
       }
 
@@ -64,14 +62,14 @@ Component({
         * 当this.hasMore为false的时候，loading将会一直是true，等下次关闭页面，重新加载
         * 的时候可能只会出现二十个数据
         * */
-        this._locked();   /*上锁*/
+        this.locked();   /*上锁*/
         BookModel.search(this.getCurrentStart(),this.data.q).then((res)=>{
           /*两个数组组合起来*/
           this.setMoredata(res.books);
-          this._unLocked();   /*解锁*/
+          this.unLocked();   /*解锁*/
         },()=>{
           /*当出现错误的时候也需要解锁，避免死锁*/
-          this._unLocked();
+          this.unLocked();
         })
       }
 
@@ -93,13 +91,13 @@ Component({
       this._showResult();
       this._showLoadingCenter();
       const word = event.detail.value || event.detail.comment;
+      this.setData({
+        q: word
+      });
       BookModel.search(0,word).then((res)=>{
         this.setMoredata(res.books);
         /*第一次从服务器返回数据记得设置total*/
         this.setTotal(res.total);
-        this.setData({
-          q: word
-        });
         this._hideLoadingCenter();
         KeywordModel.addToHistory(word);
       },)
@@ -118,22 +116,6 @@ Component({
       this.setData({
         searching: false,
         q: ''
-      })
-    },
-
-    _isLocked(){
-      return this.data.loading?true:false
-    },
-
-    _locked(){
-      this.setData({
-        loading: true
-      })
-    },
-
-    _unLocked(){
-      this.setData({
-        loading: false
       })
     },
 

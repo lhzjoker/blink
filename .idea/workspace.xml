@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/component/behaviors/pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/loading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/loading/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/loading/index.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component/loading/index.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/book/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/book/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/behaviors/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/behaviors/pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/search/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/search/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/search/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/search/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/book/book.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/book/book.wxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +95,8 @@
       <workItem from="1585811142179" duration="21786000" />
       <workItem from="1585979323785" duration="14427000" />
       <workItem from="1586008690409" duration="14749000" />
-      <workItem from="1586070773769" duration="19206000" />
+      <workItem from="1586070773769" duration="22146000" />
+      <workItem from="1586245077002" duration="993000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -269,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586021777589</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="search组件细节优化">
+      <created>1586105649991</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1586105649991</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +306,7 @@
     <MESSAGE value="实现短评功能" />
     <MESSAGE value="开启loading和关闭loading" />
     <MESSAGE value="高阶组件search" />
-    <option name="LAST_COMMIT_MESSAGE" value="高阶组件search" />
+    <MESSAGE value="search组件细节优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="search组件细节优化" />
   </component>
 </project>
