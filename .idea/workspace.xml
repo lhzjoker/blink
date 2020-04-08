@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+    <list default="true" id="d6681546-ad59-4880-a3d5-1163506b853c" name="Default Changelist" comment="开发文档">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,7 @@
       <workItem from="1586070773769" duration="22146000" />
       <workItem from="1586245077002" duration="9263000" />
       <workItem from="1586275369743" duration="7390000" />
-      <workItem from="1586320112863" duration="22831000" />
+      <workItem from="1586320112863" duration="25166000" />
     </task>
     <task id="LOCAL-00001" summary="测试更新">
       <created>1584194195471</created>
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586344626230</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="开发文档">
+      <created>1586352611486</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586352611486</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +332,7 @@
     <MESSAGE value="search组件细节优化" />
     <MESSAGE value="将锁提取到分页行为中" />
     <MESSAGE value="完结散花" />
-    <option name="LAST_COMMIT_MESSAGE" value="完结散花" />
+    <MESSAGE value="开发文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="开发文档" />
   </component>
 </project>
