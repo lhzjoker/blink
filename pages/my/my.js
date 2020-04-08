@@ -43,9 +43,11 @@ Page({
 
   userAuthorized() {
       /*判断小程序有没有授权*/
+      /*返回数据的authSetting为scope.userInfo则已经授权*/
       wx.getSetting({
           success: (res) => {
               if (res.authSetting['scope.userInfo']) {
+                  /*如果已授权就可以获取用户数据*/
                   wx.getUserInfo({
                       success: res => {
                           this.setData({
@@ -62,6 +64,7 @@ Page({
   },
 
     onGetUserInfo(event){
+      /*用户信息*/
         const userInfo = event.detail.userInfo;
         if(userInfo){
             this.setData({
