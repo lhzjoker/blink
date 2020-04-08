@@ -1,0 +1,8 @@
+<view class="container" catch:tap="onTap">
+    <view class="header">
+        <v-tag comment="{{typeText}}" class="tag"></v-tag>
+        <v-like onlyRead="{{true}}" class="like" like="{{true}}" count="{{classic.fav_nums}}"></v-like>
+    </view>
+    <image src="{{classic.image}}" class="{{classic.type==200?'music-img':'other-img'}}"></image>
+    <text class="text">{{classic.content}}</text>
+</view>

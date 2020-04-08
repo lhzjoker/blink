@@ -29,3 +29,21 @@
     position: absolute;
     bottom: 50rpx;
 }
+
+.like-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30rpx;
+}
+
+.share-btn{
+    margin-top: 28rpx;
+    margin-left: 10rpx;
+}
+
+.share{
+    width: 40rpx;
+    height: 40rpx;
+}

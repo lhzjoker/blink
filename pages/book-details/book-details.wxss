@@ -187,3 +187,13 @@
 .shadow{
     color: #999;
 }
+
+.share{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.share-btn{
+    margin-top: 28rpx;
+    margin-right: 10rpx;
+}

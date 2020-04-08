@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 40rpx;
+    align-items: center;
+    width: 330rpx;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80rpx;
+    width: 100%;
+}
+
+.other-img{
+    width: 100%;
+    height: 240rpx;
+}
+
+.music-img{
+    height: 240rpx;
+    width: 240rpx;
+    border-radius: 50%;
+}
+
+.tag{
+    margin-left: 10rpx;
+}
+
+.like{
+    margin-right: 10rpx;
+}
+
+.text{
+    padding: 30rpx;
+    font-size: 28rpx;
+    height: 130rpx;
+    overflow: hidden;
+    color: #666666;
+}

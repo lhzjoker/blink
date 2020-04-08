@@ -12,7 +12,8 @@ Component({
     count: {
       type: Number,
       value: 0,
-    }
+    },
+    onlyRead: Boolean
   },
 
     /**
@@ -31,6 +32,9 @@ Component({
     methods: {
       /*点赞函数*/
       onLike: function (event) {
+        if(this.properties.onlyRead){
+          return
+        }
         let like = this.properties.like;  //this函数引用这个widow中的属性
         let count = this.properties.count;
 

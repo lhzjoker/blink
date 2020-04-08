@@ -6,7 +6,10 @@
     "pages/classic/classic",
     "pages/book/book",
     "pages/my/my",
-    "pages/book-details/book-details"
+    "pages/book-details/book-details",
+    "pages/course/course",
+    "pages/about/about",
+    "pages/classic-detail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

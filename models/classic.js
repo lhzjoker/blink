@@ -58,6 +58,24 @@ class ClassicModel{
     static _getKey(index){
         return 'classic-' + index
     }
+
+    static getClassics(callback){
+        Http.request({
+            url: 'classic/favor',
+            success: (res)=>{
+                callback(res)
+            }
+        })
+    }
+
+    static getById(type,id,callback){
+        Http.request({
+            url: `classic/${type}/${id}`,
+            success: (res)=>{
+                callback(res)
+            }
+        })
+    }
 }
 
 export {
